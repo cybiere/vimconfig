@@ -12,6 +12,9 @@ colorscheme monokai
 
 
 let g:powerline_pycmd = 'py3'
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
 
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
@@ -29,3 +32,5 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
+
+
