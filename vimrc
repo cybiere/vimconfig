@@ -1,4 +1,5 @@
 se nu
+set mouse=
 syntax on
 se ai
 set cursorline
