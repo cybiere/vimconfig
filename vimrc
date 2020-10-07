@@ -32,17 +32,6 @@ let g:lightline = {
       \ 'colorscheme': 'nord',
       \ }
 
-"Taglist
-let Tlist_Compact_Format = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Close_On_Select = 1
-nnoremap <C-l> :TlistToggle<CR>
-nmap <F8> :TagbarToggle<CR>
-
-"IndentGuides
-"let g:indent_guides_enable_on_vim_startup = 1
-"let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
-
+"Tagbar
+nnoremap <C-l> :TagbarToggle<CR>
 
