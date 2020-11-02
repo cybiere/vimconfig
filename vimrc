@@ -13,6 +13,7 @@ set foldmethod=syntax
 set laststatus=2
 set t_Co=256
 set noshowmode
+let g:vim_markdown_folding_style_pythonic = 1
 
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
@@ -33,5 +34,7 @@ let g:lightline = {
       \ }
 
 "Tagbar
+let g:tagbar_sort = 0
+let g:tagbar_foldlevel = 2
 nnoremap <C-l> :TagbarToggle<CR>
 
