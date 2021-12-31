@@ -21,8 +21,11 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 execute pathogen#infect()
 
 "Nerdtree
-map <C-t> :NERDTreeTabsToggle<CR>
+noremap <C-t> :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=2
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 "Nord theme
 colorscheme nord
@@ -36,5 +39,10 @@ let g:lightline = {
 "Tagbar
 let g:tagbar_sort = 0
 let g:tagbar_foldlevel = 2
-nnoremap <C-l> :TagbarToggle<CR>
+noremap <C-l> :TagbarToggle<CR>
 
+set switchbuf=useopen
+"let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+noremap <C-b> :BuffergatorToggle<CR>
